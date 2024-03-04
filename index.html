@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile Card</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="card-header">
+                <i class="fas fa-arrow-left"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="card-content">
+                <div class="profile-image"></div>
+                <h1>Jon B. Elliott</h1>
+                <p>
+                    Justo tempor commodo id quo, mea vidisse albucius singulis
+                    te.
+                </p>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="showSection('about')">
+                        About me
+                    </button>
+                    <button class="nav-btn" onclick="showSection('skills')">
+                        Skills
+                    </button>
+                    <button class="nav-btn" onclick="showSection('portfolio')">
+                        Portfolio
+                    </button>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <span>Advertising</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Wedding</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Fashion</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="hire-me">HIRE ME</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+  --bg-gradient-start: #4facfe;
+  --bg-gradient-end: #00f2fe;
+  --card-bg-color: rgba(255, 255, 255, 0.9);
+  --primary-color: #4facfe;
+  --secondary-color: #00f2fe;
+  --text-color: #333;
+  --icon-color: #fff;
+  --skill-bar-bg: #e6e6e6;
+  --skill-bar-fill-start: #4facfe;
+  --skill-bar-fill-end: #00f2fe;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, var(--bg-gradient-start), var(--bg-gradient-end));
+}
+
+.profile-card {
+  background: var(--card-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--icon-color);
+  background-image: url('background.webp');
+}
+
+.profile-image {
+  background-image: url('profile.webp');
+  background-size: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background: var(--skill-bar-bg);
+  border-radius: 10px;
+}
+
+.skill-level {
+  background: linear-gradient(to right, var(--skill-bar-fill-start), var(--skill-bar-fill-end));
+  border-radius: 10px;
+  height: 10px;
+}
+
+.hire-me {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 20px;
+  color: #fff
+}
